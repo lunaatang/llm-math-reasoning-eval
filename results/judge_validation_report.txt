@@ -1,0 +1,5 @@
+Judge-validation agreement report
+Steps compared: 75
+Overall agreement: 63/75 = 84.0%
+
+Confusion matrix (rows=human, cols=judge): {"valid": {"valid": 40, "unsupported_jump": 3}, "computation_error": {"invalid_inference": 3, "computation_error": 7}, "invalid_inference": {"computation_error": 1, "valid": 1, "invalid_inference": 10}, "unsupported_jump": {"unsupported_jump": 6, "valid": 4}}

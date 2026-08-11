@@ -1,0 +1,46 @@
+{
+  "phase": "evaluate",
+  "variants_in": "variants_frozen.jsonl",
+  "solver_model": "claude-sonnet-5",
+  "runs": 5,
+  "max_tokens_solver": 4096,
+  "run_date_utc": "2026-08-11T09:39:22.905447+00:00",
+  "per_run_accuracy": [
+    {
+      "original": 1.0,
+      "problem_understanding": 1.0,
+      "irrelevant_disturbance": 1.0,
+      "misleading_hint": 0.6666666666666666,
+      "scenario_reframe": 0.9166666666666666
+    },
+    {
+      "original": 1.0,
+      "problem_understanding": 1.0,
+      "irrelevant_disturbance": 1.0,
+      "misleading_hint": 0.5833333333333334,
+      "scenario_reframe": 0.9166666666666666
+    },
+    {
+      "original": 1.0,
+      "problem_understanding": 1.0,
+      "irrelevant_disturbance": 1.0,
+      "misleading_hint": 0.5833333333333334,
+      "scenario_reframe": 0.9166666666666666
+    },
+    {
+      "original": 1.0,
+      "problem_understanding": 0.9166666666666666,
+      "irrelevant_disturbance": 1.0,
+      "misleading_hint": 0.6666666666666666,
+      "scenario_reframe": 1.0
+    },
+    {
+      "original": 1.0,
+      "problem_understanding": 1.0,
+      "irrelevant_disturbance": 1.0,
+      "misleading_hint": 0.5833333333333334,
+      "scenario_reframe": 0.9166666666666666
+    }
+  ],
+  "note": "Frozen-variant multi-run pilot. SymPy-checked answers where parsing succeeds; not formally verified. Exploratory, not a general claim."
+}

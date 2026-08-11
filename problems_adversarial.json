@@ -1,0 +1,98 @@
+[
+  {
+    "id": "ADV-1",
+    "category": "Combinatorics",
+    "difficulty": 5,
+    "problem": "How many distinct ways can you arrange the letters of the word 'MISSISSIPPI'?",
+    "answer": "34650",
+    "skill_tag": "permutations with repeated elements (I x4, S x4, P x2) -- easy to miscount letter frequencies or forget a repeated letter"
+  },
+  {
+    "id": "ADV-2",
+    "category": "Combinatorics",
+    "difficulty": 5,
+    "problem": "A group of 10 people is split into two unordered teams of 5 each. In how many ways can this be done?",
+    "answer": "126",
+    "skill_tag": "classic overcounting trap: C(10,5) counts each split twice since the two teams are not labeled"
+  },
+  {
+    "id": "ADV-3",
+    "category": "Combinatorics",
+    "difficulty": 5,
+    "problem": "How many ways can 3 identical red balls and 3 identical blue balls be arranged in a row of 6 positions?",
+    "answer": "20",
+    "skill_tag": "arrangements with two groups of identical items -- tempting to use 6! and forget to divide by both 3!'s"
+  },
+  {
+    "id": "ADV-4",
+    "category": "Combinatorics",
+    "difficulty": 5,
+    "problem": "A fair coin is flipped 8 times. In how many of the 256 outcomes are there at least 2 heads?",
+    "answer": "247",
+    "skill_tag": "'at least 2' is error-prone via direct casework; complementary counting (total minus 0-heads minus 1-head) is clean"
+  },
+  {
+    "id": "ADV-5",
+    "category": "Number Theory",
+    "difficulty": 5,
+    "problem": "How many integers from 1 to 200 (inclusive) are NOT divisible by 2, 3, or 5?",
+    "answer": "54",
+    "skill_tag": "inclusion-exclusion on three sets; a common error is forgetting to add back the triple overlap"
+  },
+  {
+    "id": "ADV-6",
+    "category": "Algebra",
+    "difficulty": 5,
+    "problem": "Solve for x: sqrt(x + 7) = x - 5. Give the sum of all valid real solutions (extraneous solutions excluded).",
+    "answer": "9",
+    "skill_tag": "squaring both sides introduces an extraneous root; must check candidates against the ORIGINAL equation, not just x>=5 domain"
+  },
+  {
+    "id": "ADV-7",
+    "category": "Algebra",
+    "difficulty": 5,
+    "problem": "Solve for x: log(x) + log(x - 3) = 1 (log base 10). Give the sum of all valid real solutions.",
+    "answer": "5",
+    "skill_tag": "log domain restricts x>3; the quadratic from combining logs has two roots but only one lies in the valid domain"
+  },
+  {
+    "id": "ADV-8",
+    "category": "Number Theory",
+    "difficulty": 5,
+    "problem": "Compute 37 * 43 * 7 mod 100 (i.e. the last two digits of 37 * 43 * 7).",
+    "answer": "37",
+    "skill_tag": "multi-step modular multiplication -- easy to make an arithmetic slip carrying the mod through multiple multiplications"
+  },
+  {
+    "id": "ADV-9",
+    "category": "Algebra",
+    "difficulty": 5,
+    "problem": "Compute the exact value of 123456789 * 2 - 987654321 / 3 (evaluate / before -, standard order of operations). Give the answer as an integer if it is one, otherwise say NOT_INTEGER.",
+    "answer": "-82304529",
+    "skill_tag": "large exact arithmetic combined with order-of-operations, tests whether the model actually computes rather than approximates"
+  },
+  {
+    "id": "ADV-10",
+    "category": "Geometry",
+    "difficulty": 5,
+    "problem": "A rectangle's length is doubled and its width is tripled. By what factor does its area increase? Give the answer as an integer.",
+    "answer": "6",
+    "skill_tag": "tempting wrong shortcut: averaging or adding the two scale factors instead of multiplying them"
+  },
+  {
+    "id": "ADV-11",
+    "category": "Number Theory",
+    "difficulty": 5,
+    "problem": "Is it true that if a number is divisible by 4 and by 6, it must be divisible by 24? Answer 1 for yes, 0 for no.",
+    "answer": "0",
+    "skill_tag": "classic false-generalization trap: lcm(4,6)=12, not 24 (e.g. 12 is divisible by 4 and 6 but not 24) -- tests whether the model verifies rather than pattern-matches 'divisible by a and b -> divisible by a*b'"
+  },
+  {
+    "id": "ADV-12",
+    "category": "Combinatorics",
+    "difficulty": 5,
+    "problem": "Three fair six-sided dice are rolled. What is the probability that the sum is exactly 10? Give the answer as a fraction in lowest terms, written as numerator/denominator (e.g. 1/6).",
+    "answer": "1/8",
+    "skill_tag": "counting outcomes for a fixed sum across 3 dice is NOT uniform across sums -- tempting wrong shortcut treats all sums (3-18) as equally likely"
+  }
+]

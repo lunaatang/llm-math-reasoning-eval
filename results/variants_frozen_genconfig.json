@@ -1,0 +1,16 @@
+{
+  "phase": "generate",
+  "generator_model": "claude-sonnet-5",
+  "problems_file": "problems_external.json",
+  "n_problems": 12,
+  "variant_types": [
+    "original",
+    "problem_understanding",
+    "irrelevant_disturbance",
+    "misleading_hint",
+    "scenario_reframe"
+  ],
+  "n_frozen_variants": 60,
+  "run_date_utc": "2026-08-11T08:47:45.780890+00:00",
+  "note": "Frozen variant set. Every Phase-2 run solves exactly these texts, so run-to-run variance reflects only solver stochasticity, not changing variant wording."
+}

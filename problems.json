@@ -1,0 +1,242 @@
+[
+  {
+    "id": "ALG-1",
+    "category": "Algebra",
+    "difficulty": 1,
+    "problem": "Solve for x: 3x - 7 = 2x + 5.",
+    "answer": "12",
+    "skill_tag": "linear equation"
+  },
+  {
+    "id": "ALG-2",
+    "category": "Algebra",
+    "difficulty": 1,
+    "problem": "If f(x) = 2x^2 - 3x + 1, find f(3).",
+    "answer": "10",
+    "skill_tag": "function evaluation"
+  },
+  {
+    "id": "ALG-3",
+    "category": "Algebra",
+    "difficulty": 2,
+    "problem": "Find the sum of the roots of x^2 - 7x + 10 = 0.",
+    "answer": "7",
+    "skill_tag": "Vieta's formulas"
+  },
+  {
+    "id": "ALG-4",
+    "category": "Algebra",
+    "difficulty": 2,
+    "problem": "Simplify (x^2 - 9)/(x - 3) for x != 3, then evaluate at x = 5.",
+    "answer": "8",
+    "skill_tag": "factoring / rational simplification"
+  },
+  {
+    "id": "ALG-5",
+    "category": "Algebra",
+    "difficulty": 3,
+    "problem": "Find all real solutions to x^4 - 5x^2 + 4 = 0, and give the sum of the squares of all real solutions.",
+    "answer": "10",
+    "skill_tag": "substitution / quadratic in disguise"
+  },
+  {
+    "id": "ALG-6",
+    "category": "Algebra",
+    "difficulty": 3,
+    "problem": "Let a and b be positive reals with a + b = 10 and ab = 21. Find a^2 + b^2.",
+    "answer": "58",
+    "skill_tag": "symmetric functions of roots"
+  },
+  {
+    "id": "NT-1",
+    "category": "Number Theory",
+    "difficulty": 1,
+    "problem": "What is the remainder when 47 is divided by 6?",
+    "answer": "5",
+    "skill_tag": "modular arithmetic"
+  },
+  {
+    "id": "NT-2",
+    "category": "Number Theory",
+    "difficulty": 1,
+    "problem": "Find the greatest common divisor of 84 and 126.",
+    "answer": "42",
+    "skill_tag": "GCD / Euclidean algorithm"
+  },
+  {
+    "id": "NT-3",
+    "category": "Number Theory",
+    "difficulty": 2,
+    "problem": "How many positive divisors does 360 have?",
+    "answer": "24",
+    "skill_tag": "prime factorization / divisor counting"
+  },
+  {
+    "id": "NT-4",
+    "category": "Number Theory",
+    "difficulty": 2,
+    "problem": "Find the smallest positive integer n such that n is divisible by 3, 4, and 5.",
+    "answer": "60",
+    "skill_tag": "LCM"
+  },
+  {
+    "id": "NT-5",
+    "category": "Number Theory",
+    "difficulty": 3,
+    "problem": "What is the last digit of 7^123?",
+    "answer": "3",
+    "skill_tag": "modular exponentiation / cyclicity"
+  },
+  {
+    "id": "NT-6",
+    "category": "Number Theory",
+    "difficulty": 3,
+    "problem": "Find the number of positive integers less than 100 that are relatively prime to 100.",
+    "answer": "40",
+    "skill_tag": "Euler's totient function"
+  },
+  {
+    "id": "GEO-1",
+    "category": "Geometry",
+    "difficulty": 1,
+    "problem": "A right triangle has legs of length 6 and 8. Find the length of the hypotenuse.",
+    "answer": "10",
+    "skill_tag": "Pythagorean theorem"
+  },
+  {
+    "id": "GEO-2",
+    "category": "Geometry",
+    "difficulty": 1,
+    "problem": "Find the area of a circle with radius 4, in terms of pi (answer as a coefficient of pi).",
+    "answer": "16",
+    "skill_tag": "circle area formula"
+  },
+  {
+    "id": "GEO-3",
+    "category": "Geometry",
+    "difficulty": 2,
+    "problem": "A rectangle has perimeter 28 and area 40. Find the length of its longer side.",
+    "answer": "10",
+    "skill_tag": "system of equations from perimeter/area"
+  },
+  {
+    "id": "GEO-4",
+    "category": "Geometry",
+    "difficulty": 2,
+    "problem": "An equilateral triangle has side length 6. Find its area in the form a*sqrt(3); give the value of a.",
+    "answer": "9",
+    "skill_tag": "equilateral triangle area formula"
+  },
+  {
+    "id": "GEO-5",
+    "category": "Geometry",
+    "difficulty": 3,
+    "problem": "A square is inscribed in a circle of radius 5. Find the area of the square.",
+    "answer": "50",
+    "skill_tag": "inscribed square / diagonal-radius relation"
+  },
+  {
+    "id": "GEO-6",
+    "category": "Geometry",
+    "difficulty": 3,
+    "problem": "Points A(0,0), B(6,0), C(6,8) form a right triangle. Find the radius of the circle circumscribing triangle ABC.",
+    "answer": "5",
+    "skill_tag": "circumradius of right triangle = half the hypotenuse"
+  },
+  {
+    "id": "COMB-1",
+    "category": "Combinatorics",
+    "difficulty": 1,
+    "problem": "In how many ways can 4 distinct books be arranged on a shelf?",
+    "answer": "24",
+    "skill_tag": "permutations"
+  },
+  {
+    "id": "COMB-2",
+    "category": "Combinatorics",
+    "difficulty": 1,
+    "problem": "How many ways can you choose a committee of 3 people from a group of 7?",
+    "answer": "35",
+    "skill_tag": "combinations"
+  },
+  {
+    "id": "COMB-3",
+    "category": "Combinatorics",
+    "difficulty": 2,
+    "problem": "How many 3-digit numbers (100-999) have all distinct digits?",
+    "answer": "648",
+    "skill_tag": "counting with restrictions"
+  },
+  {
+    "id": "COMB-4",
+    "category": "Combinatorics",
+    "difficulty": 2,
+    "problem": "A bag has 5 red and 3 blue balls. In how many ways can you choose 2 red and 1 blue ball?",
+    "answer": "30",
+    "skill_tag": "combination product / multiplication principle"
+  },
+  {
+    "id": "COMB-5",
+    "category": "Combinatorics",
+    "difficulty": 3,
+    "problem": "How many ways can 6 people be seated around a circular table, where rotations are considered the same arrangement?",
+    "answer": "120",
+    "skill_tag": "circular permutations"
+  },
+  {
+    "id": "COMB-6",
+    "category": "Combinatorics",
+    "difficulty": 3,
+    "problem": "In how many ways can the letters of the word 'BANANA' be arranged?",
+    "answer": "60",
+    "skill_tag": "permutations with repeated elements"
+  },
+  {
+    "id": "PRE-1",
+    "category": "Precalculus",
+    "difficulty": 1,
+    "problem": "Evaluate sin(30 degrees) + cos(60 degrees). Give the answer as a fraction.",
+    "answer": "1",
+    "skill_tag": "special angle values"
+  },
+  {
+    "id": "PRE-2",
+    "category": "Precalculus",
+    "difficulty": 1,
+    "problem": "If log_2(x) = 5, find x.",
+    "answer": "32",
+    "skill_tag": "logarithm definition"
+  },
+  {
+    "id": "PRE-3",
+    "category": "Precalculus",
+    "difficulty": 2,
+    "problem": "Find the period (in terms of pi, give the coefficient) of f(x) = sin(3x).",
+    "answer": "2/3",
+    "skill_tag": "trig function period"
+  },
+  {
+    "id": "PRE-4",
+    "category": "Precalculus",
+    "difficulty": 2,
+    "problem": "Solve for x in [0, 2*pi): 2*sin(x) = 1. Give the smaller solution, as a multiple of pi (give the coefficient).",
+    "answer": "1/6",
+    "skill_tag": "solving trig equations"
+  },
+  {
+    "id": "PRE-5",
+    "category": "Precalculus",
+    "difficulty": 3,
+    "problem": "Find the value of cos(75 degrees) * cos(15 degrees) - sin(75 degrees) * sin(15 degrees).",
+    "answer": "0",
+    "skill_tag": "cosine addition formula (product-to-sum insight)"
+  },
+  {
+    "id": "PRE-6",
+    "category": "Precalculus",
+    "difficulty": 3,
+    "problem": "A geometric sequence has first term 3 and common ratio 2. Find the sum of the first 6 terms.",
+    "answer": "189",
+    "skill_tag": "geometric series sum formula"
+  }
+]

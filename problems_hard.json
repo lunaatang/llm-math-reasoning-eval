@@ -1,0 +1,162 @@
+[
+  {
+    "id": "HALG-1",
+    "category": "Algebra",
+    "difficulty": 4,
+    "problem": "Let x and y be positive reals such that x + y = 8 and x^3 + y^3 = 152. Find xy.",
+    "answer": "15",
+    "skill_tag": "sum/cube identity, requires solving for xy from x^3+y^3=(x+y)^3-3xy(x+y)"
+  },
+  {
+    "id": "HALG-2",
+    "category": "Algebra",
+    "difficulty": 4,
+    "problem": "The polynomial p(x) = x^3 - 6x^2 + 11x - 6 has roots r, s, t. Find r^2 + s^2 + t^2.",
+    "answer": "14",
+    "skill_tag": "Vieta's formulas, multi-step (need sum and sum-of-products first)"
+  },
+  {
+    "id": "HALG-3",
+    "category": "Algebra",
+    "difficulty": 5,
+    "problem": "Find the number of integer values of k for which the equation x^2 - kx + 36 = 0 has two distinct positive integer roots.",
+    "answer": "4",
+    "skill_tag": "divisor pairs / discriminant reasoning, easy to under- or over-count"
+  },
+  {
+    "id": "HALG-4",
+    "category": "Algebra",
+    "difficulty": 5,
+    "problem": "If a, b, c are the roots of x^3 - 3x^2 + 2x - 5 = 0, find 1/a + 1/b + 1/c.",
+    "answer": "2/5",
+    "skill_tag": "Vieta's formulas on reciprocals: sum(1/root) = e2/e3, sign errors common"
+  },
+  {
+    "id": "HNT-1",
+    "category": "Number Theory",
+    "difficulty": 4,
+    "problem": "Find the number of trailing zeros in 50! (50 factorial).",
+    "answer": "12",
+    "skill_tag": "Legendre's formula for factorial prime factorization"
+  },
+  {
+    "id": "HNT-2",
+    "category": "Number Theory",
+    "difficulty": 4,
+    "problem": "Find the remainder when 3^100 is divided by 7.",
+    "answer": "4",
+    "skill_tag": "order of an element mod p / Fermat's little theorem"
+  },
+  {
+    "id": "HNT-3",
+    "category": "Number Theory",
+    "difficulty": 5,
+    "problem": "How many ordered pairs of positive integers (a,b) satisfy lcm(a,b) = 72 and gcd(a,b) = 6?",
+    "answer": "4",
+    "skill_tag": "structure of gcd/lcm pairs, requires writing a=6m, b=6n with gcd(m,n)=1"
+  },
+  {
+    "id": "HNT-4",
+    "category": "Number Theory",
+    "difficulty": 5,
+    "problem": "Find the sum of all positive divisors of 2^5 * 3^2 that are perfect squares.",
+    "answer": "210",
+    "skill_tag": "divisor enumeration + perfect-square filtering"
+  },
+  {
+    "id": "HGEO-1",
+    "category": "Geometry",
+    "difficulty": 4,
+    "problem": "A triangle has vertices A(0,0), B(8,0), C(3,6). Find the area of the triangle formed by the three midpoints of its sides.",
+    "answer": "6",
+    "skill_tag": "medial triangle has 1/4 the area (shoelace + scaling insight)"
+  },
+  {
+    "id": "HGEO-2",
+    "category": "Geometry",
+    "difficulty": 4,
+    "problem": "A cone has base radius 6 and height 8. Find the total surface area (base + lateral) as a coefficient of pi.",
+    "answer": "96",
+    "skill_tag": "slant height via Pythagorean theorem, then lateral area formula"
+  },
+  {
+    "id": "HGEO-3",
+    "category": "Geometry",
+    "difficulty": 5,
+    "problem": "Circle O has radius 10. A chord of length 12 is drawn. Find the distance from the center O to the chord.",
+    "answer": "8",
+    "skill_tag": "perpendicular-bisector-of-chord + Pythagorean theorem"
+  },
+  {
+    "id": "HGEO-4",
+    "category": "Geometry",
+    "difficulty": 5,
+    "problem": "A regular hexagon has area 24*sqrt(3). Find the side length squared.",
+    "answer": "16",
+    "skill_tag": "regular hexagon area formula, inverse solve"
+  },
+  {
+    "id": "HCOMB-1",
+    "category": "Combinatorics",
+    "difficulty": 4,
+    "problem": "How many ways can 10 identical candies be distributed among 4 distinct children so that each child gets at least 1 candy?",
+    "answer": "84",
+    "skill_tag": "stars and bars with a positivity constraint"
+  },
+  {
+    "id": "HCOMB-2",
+    "category": "Combinatorics",
+    "difficulty": 4,
+    "problem": "A committee of 5 is chosen from 6 men and 5 women. In how many ways can the committee have at least 3 women?",
+    "answer": "181",
+    "skill_tag": "case split on exact count + sum, easy to miss a case or double count"
+  },
+  {
+    "id": "HCOMB-3",
+    "category": "Combinatorics",
+    "difficulty": 5,
+    "problem": "How many ways can the numbers 1 through 6 be arranged in a row so that no number is in its original position (a derangement)?",
+    "answer": "265",
+    "skill_tag": "derangement formula / inclusion-exclusion"
+  },
+  {
+    "id": "HCOMB-4",
+    "category": "Combinatorics",
+    "difficulty": 5,
+    "problem": "In how many ways can 8 people be split into 4 unordered pairs?",
+    "answer": "105",
+    "skill_tag": "overcounting correction for unordered groupings, classic pitfall"
+  },
+  {
+    "id": "HPRE-1",
+    "category": "Precalculus",
+    "difficulty": 4,
+    "problem": "Find the sum of the infinite geometric series 4 + 4/3 + 4/9 + 4/27 + ... Give the answer as a fraction.",
+    "answer": "6",
+    "skill_tag": "infinite geometric series sum formula"
+  },
+  {
+    "id": "HPRE-2",
+    "category": "Precalculus",
+    "difficulty": 4,
+    "problem": "If sin(x) = 3/5 and x is in the second quadrant, find cos(2x). Give the answer as a fraction.",
+    "answer": "7/25",
+    "skill_tag": "double angle formula, quadrant sign is a distractor (not needed for cos(2x) via this identity)"
+  },
+  {
+    "id": "HPRE-3",
+    "category": "Precalculus",
+    "difficulty": 5,
+    "problem": "Find the smallest positive integer n such that (1+i)^n is a positive real number, where i = sqrt(-1).",
+    "answer": "8",
+    "skill_tag": "complex number polar form / argument must be a multiple of 2*pi, easy off-by-factor error"
+  },
+  {
+    "id": "HPRE-4",
+    "category": "Precalculus",
+    "difficulty": 5,
+    "problem": "A sequence is defined by a_1 = 5, a_(n+1) = 3*a_n - 4. Find a_5.",
+    "answer": "245",
+    "skill_tag": "linear recurrence, fixed-point trick: a_n - 2 is geometric with ratio 3"
+  }
+]
