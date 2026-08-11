@@ -1,11 +1,30 @@
-# LLM Mathematical Reasoning: Category-Level Failure Analysis
+# Evaluating LLM Mathematical Reasoning Beyond Answer Accuracy
 
-An AI4Math evaluation project: benchmark a language model's mathematical
-reasoning across 3 escalating difficulty tiers (62 problems total: 30
-standard, 20 AIME-adjacent, 12 adversarial "reasoning-trap" problems), grade
-answers with symbolic equivalence (not string matching), and — the actual
-point of the project — analyze *why* the model fails where it fails, not
-just how often.
+A small, auditable AI4Math research project on step-level reasoning,
+robustness under problem variation, and evaluation-harness reliability.
+
+The project combines a 62-problem, three-tier mathematical benchmark with
+symbolic answer grading, transcript-level failure analysis, MathCheck-inspired
+robustness testing, exploratory Lean 4 formalization, and a human validation
+study of an LLM-as-judge.
+
+## Key results
+
+- Built an end-to-end mathematical-reasoning evaluation pipeline with symbolic
+  answer grading, step-level analysis, frozen problem variants, and complete
+  transcript logging.
+- Identified three apparent model failures caused by evaluator artifacts
+  rather than mathematical errors, including nested-LaTeX parsing failures
+  and response truncation.
+- In a fixed-variant, five-run pilot, misleading hints reduced solver accuracy
+  from 100.0% to 61.7%, a mean drop of 38.3 percentage points
+  (33.3–41.7 points across runs).
+- Rewording, irrelevant information, and the 11 valid scenario-reframed
+  variants produced little or no degradation. One malformed scenario variant
+  was excluded because generation truncation changed the requested task.
+- A 75-step human–judge pilot obtained 84% raw agreement. Unsupported jumps
+  were the least reliable category, illustrating the need to audit automated
+  step-level judgments.
 
 ## Files
 
