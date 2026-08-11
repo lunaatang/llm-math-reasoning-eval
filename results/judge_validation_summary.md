@@ -21,10 +21,12 @@ study between the judge and a human annotator.
 ## Results
 
 **Overall agreement: 63/75 = 84.0%.**
-Because the set is balanced, a trivial always-"valid" judge would score only
-43/75 ≈ 57% (the majority-class baseline). The judge's 84% is well above that,
-so the agreement reflects genuine discrimination, not label skew.
-
+The set is error-enriched rather than naturally distributed: synthetic error
+steps were added because natural model outputs were overwhelmingly labeled
+`valid`. A trivial always-`valid` judge would score 43/75 ≈ 57% on this set.
+The observed 84% raw agreement therefore provides evidence that the judge
+distinguishes multiple categories, but it is not a definitive reliability
+estimate.
 | Human label | Judge agreement |
 |---|---|
 | valid | 40/43 = 93% |
@@ -45,21 +47,28 @@ Confusion matrix (rows = human, cols = judge):
 
 ## What this tells us
 
-- The judge is **reliable overall** (84%, well above the 57% baseline), so
-  conclusions drawn from the step-level analysis are broadly trustworthy.
-- Its **weakest category is `unsupported_jump` (60%)**, and its dominant error
-  is calling an unsupported jump `valid` — i.e. it is **too lenient about
-  skipped reasoning**, sometimes treating an unjustified leap as if it followed.
-- **Implication:** any "fraction of chains fully valid" figure from this judge
-  should be read as an **upper bound** — the judge under-detects exactly the
-  skipped-reasoning failures that matter most for evaluating genuine reasoning.
-- **Honesty note:** 30/75 steps are synthetic. They were necessary to test the
-  judge on error types that are rare in natural output; they are transparently
-  marked and should not be read as natural error frequencies.
+- The judge appears useful as a **pilot diagnostic**, achieving 84% raw
+  agreement on this small mixed natural/synthetic set.
+- `unsupported_jump` was the weakest category at 60%. The judge labeled four
+  human-annotated unsupported jumps as valid, suggesting that it may sometimes
+  be too permissive about omitted reasoning.
+- The judge also incorrectly flagged three human-labeled valid steps as
+  unsupported. Therefore, chain-validity estimates may be biased in either
+  direction; the observed error pattern suggests possible upward bias, but the
+  estimates should not be described as a strict upper bound.
+- The boundaries between `computation_error` and `invalid_inference`, and
+  between a concise valid step and an `unsupported_jump`, are partly
+  judgment-dependent. Some disagreements may reflect rubric ambiguity rather
+  than clear judge failures.
+- Thirty of the 75 evaluated steps are synthetic. They are transparently
+  identified in `annotation_sheet.csv` and should not be interpreted as
+  naturally occurring error frequencies.
 
 ## Method limitations
 
-Single annotator; small pilot set; synthetic errors are cleaner than
-naturally-occurring ones, so real-world judge accuracy on messy errors may be
-lower. A second independent annotator and a larger natural-error sample would
-firm this up.
+This is a small pilot with a single human annotator. Thirty examples are
+synthetic and intentionally cleaner than naturally occurring model errors.
+Several category boundaries are inherently subjective, particularly
+computation error versus invalid method and concise reasoning versus an
+unsupported jump. A larger natural-error sample, per-row judge outputs, and a
+second independent annotator would be needed for a stronger reliability claim.
