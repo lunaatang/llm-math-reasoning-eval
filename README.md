@@ -51,13 +51,14 @@ study of an LLM-as-judge.
   any tier without overwriting another tier's results. Includes a
   deterministic mock model so the pipeline can be validated without an API
   key.
-- `judge_validation.py` — **validates the LLM-as-judge** used in
-  reasoning_analysis: builds a human-annotated, label-balanced set (natural +
-  transparently-marked synthetic error steps), gives the judge the same prior
-  context the human saw, and reports agreement. Result: 84% agreement vs. a 57%
-  majority-class baseline, weakest on unsupported_jump (judge too lenient about
-  skipped reasoning). See `results/judge_validation_summary.md` and notebook
-  Section 12.
+- `judge_validation.py` — **pilots a validation of the LLM-as-judge** used in
+  `reasoning_analysis.py`. It evaluates an error-enriched set containing
+  natural model steps and transparently marked synthetic examples, while
+  giving the judge the same prior context available to the human annotator.
+  Raw agreement was 84% versus a 57% majority-class baseline, with the weakest
+  performance on `unsupported_jump`. Because the study is small, uses one
+  annotator, and includes synthetic examples, the result is treated as a
+  diagnostic rather than a definitive reliability estimate.
 - `reasoning_analysis.py` — **step-level reasoning analysis** (project
   extension): segments each model solution into steps and verifies each one,
   surfacing "right answer but flawed/skipped reasoning" cases that answer-only
