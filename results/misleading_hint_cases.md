@@ -1,8 +1,12 @@
 # Misleading-Hint Failure Cases — Detailed Analysis
 
 **Source:** `stable_results.jsonl` (fixed variant set `variants_frozen.jsonl`, solver `claude-sonnet-5`, 5 runs).
-**Headline result:** misleading-hint variant is the only perturbation with a large, stable accuracy drop — mean **−38.3 pts** vs. original (per-run range −33.3 to −41.7 over 5 runs); rewording, irrelevant-information injection, and scenario reframing show ≤7-pt mean drops.
-
+**Headline result:** the misleading-hint variant produced a large, stable
+accuracy drop: mean **−38.3 pts** relative to the original, with a per-run
+range of −33.3 to −41.7 points over five runs. Rewording and
+irrelevant-information injection produced little or no degradation. The 11
+valid scenario-reframed variants remained at 100%; one malformed scenario
+variant was excluded because generation truncation changed the task.
 **Grading note:** answers are programmatically checked with SymPy where parsing succeeds; this is a **12-problem pilot**, exploratory rather than a general claim about frontier models.
 
 ---
@@ -67,7 +71,10 @@ Pattern (B) is the most concerning: the model did not have its reasoning *derail
 
 ## What this supports (and what it does not)
 
-- **Supported:** on this pilot, the model is robust to rewording, irrelevant noise, and scenario reframing, but its accuracy drops sharply and reproducibly when a plausible, specific, **wrong** steer is embedded in the problem. The result is consistent with susceptibility to externally supplied misleading intermediate information.
+- **Supported:** on this pilot, the model remained robust to rewording,
+  irrelevant noise, and the valid scenario-reframed variants, while accuracy
+  dropped sharply and reproducibly when a plausible, specific wrong steer was
+  embedded in the problem. The result is consistent with susceptibility to externally supplied misleading intermediate information.
 - **Not claimed:** this is *not* evidence of "pattern-matching rather than reasoning" in general — mechanism (C) is a counter-example, and alternative accounts (instruction-following, deference to a stated premise, sycophancy) are not excluded by these data.
-- **Relevance:** in human–AI collaborative mathematics (e.g. tutoring, the target application area), a user-supplied wrong hint may not be corrected — and, as mechanism (B) shows, may cause the model to skip verification altogether.
+- **Relevance:** in human–AI collaborative mathematics, including tutoring, a user-supplied wrong hint may not be corrected — and, as mechanism (B) shows, may cause the model to skip verification altogether.
 - **Next steps to firm this up:** larger sample; the fixed-variant / multi-run design here (already applied) to separate variant-wording variance from solver stochasticity; and a solver ≠ generator split to rule out self-generation effects.
