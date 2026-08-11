@@ -64,10 +64,14 @@ study of an LLM-as-judge.
   surfacing "right answer but flawed/skipped reasoning" cases that answer-only
   grading hides. Has a no-API-key mock. See notebook Section 7.
 - `mathcheck_robustness.py` — **robustness-under-variation** module aligned
-  with MathCheck (Zhou et al., ICLR 2025), the target lab's flagship work:
+  with MathCheck (Zhou et al., ICLR 2025):
   generates reworded and noise-injected variants of each problem and measures
   the accuracy drop, testing whether the model reasons robustly or just
   relies on surface cues rather than robust reasoning. See notebook Section 10.
+- `mathcheck_robustness_stable.py` — freezes the generated variants before
+  evaluation and solves the same fixed set over multiple runs. This separates
+  solver stochasticity from variation in generated problem wording and
+  produces auditable mean and run-to-run results.
 - `lean_exploration/` — **formal-verification exploration**: three benchmark
   problems formalized as Lean 4 theorems, including a formal refutation of the
   ADV-11 false-generalization trap. See notebook Section 8 and the folder's
