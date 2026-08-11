@@ -28,7 +28,10 @@ study of an LLM-as-judge.
 
 ## Files
 
-- `results/` — frozen evidence from the actual runs: `robustness_summary.md` (multi-run stable numbers), `misleading_hint_cases.md` (per-case failure analysis with transcripts), plus the raw `*.jsonl` and `*_run_config.json` from each run. All findings here are a **12-problem pilot** — exploratory, not general claims; answers are SymPy-checked where parsing succeeds, not formally verified.
+- `results/` — frozen evidence from the actual runs: `robustness_summary.md` (multi-run stable numbers), `misleading_hint_cases.md` (per-case failure analysis with transcripts), plus the raw `*.jsonl` and `*_run_config.json` from each run. The robustness findings are based on a **12-problem pilot**, while the
+judge-validation study uses 75 natural and synthetic reasoning steps.
+Both are exploratory rather than general claims; answers are SymPy-checked
+where parsing succeeds, not formally verified. — exploratory, not general claims; answers are SymPy-checked where parsing succeeds, not formally verified.
 
 - `problems.json` — Tier 1: 30 standard problems (difficulty 1-3), 5
   categories. Ground-truth answers computed with `sympy` in
